@@ -1,31 +1,34 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>>& grid, int m, int n, int i, int j, int& currentArea) {
-        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] != 1) {
+    void dfs(vector<vector<int>>& grid,int i,int j,int m,int n,int &x)
+    {
+        if(i<0 || i>=m ||j<0 || j>=n || grid[i][j]!=1)
+        {
             return;
         }
-        grid[i][j] = -1;
-        currentArea++;
-        dfs(grid, m, n, i + 1, j, currentArea);
-        dfs(grid, m, n, i - 1, j, currentArea);
-        dfs(grid, m, n, i, j + 1, currentArea);
-        dfs(grid, m, n, i, j - 1, currentArea);
+        grid[i][j]=-1;
+        x++;
+        dfs(grid,i+1,j,m,n,x);
+        dfs(grid,i-1,j,m,n,x);
+        dfs(grid,i,j+1,m,n,x);
+        dfs(grid,i,j-1,m,n,x);
     }
-
     int maxAreaOfIsland(vector<vector<int>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
-        int maxArea = 0;
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (grid[i][j] == 1) {
-                    int currentArea = 0; // Correctly initialize currentArea here
-                    dfs(grid, m, n, i, j, currentArea);
-                    maxArea = max(maxArea, currentArea);
+        int m=grid.size();
+        int n=grid[0].size();
+        int area=0;
+        for(int i=0;i<m;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                if(grid[i][j]==1)
+                {
+                    int x=0;
+                    dfs(grid,i,j,m,n,x);
+                    area=max(area,x);
                 }
             }
         }
-        return maxArea;
+        return area;
     }
 };
