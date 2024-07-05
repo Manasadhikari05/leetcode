@@ -54,4 +54,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/Manasadhikari05/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+## Linked List
+|  |
+| ------- |
+| [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Manasadhikari05/leetcode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 <!---LeetCode Topics End-->
