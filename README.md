@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/Manasadhikari05/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [2645-pass-the-pillow](https://github.com/Manasadhikari05/leetcode/tree/master/2645-pass-the-pillow) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -58,4 +59,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Manasadhikari05/leetcode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
+## Simulation
+|  |
+| ------- |
+| [2645-pass-the-pillow](https://github.com/Manasadhikari05/leetcode/tree/master/2645-pass-the-pillow) |
 <!---LeetCode Topics End-->
